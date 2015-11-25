@@ -41,3 +41,24 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+.headerLinks {
+    margin-bottom: 0.5rem; // Matches page name h1.
+
+    margin-top: 1rem;
+}
+
+.headerLinks a {
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    color: $dark-gray;
+}
+
+.headerLinks a:hover {
+    color: $black;
+}
+
+.headerHr {
+    margin-top: 0;
+}
