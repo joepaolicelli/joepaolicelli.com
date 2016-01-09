@@ -42,9 +42,20 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+.my-header {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $dark-gray;
+}
+
+.site-title h1 {
+    color: #005FD2;
+
+    margin-bottom: 0;
+}
 
 .headerLinks {
-    margin-bottom: 0.5rem; // Matches page name h1.
+    margin-bottom: 0;
 
     margin-top: 1rem;
 }
@@ -53,12 +64,12 @@
     font-size: 2rem;
     margin-left: 1.5rem;
     color: $dark-gray;
+
+    @include breakpoint(medium only) {
+        font-size: 1.6rem;
+    }
 }
 
 .headerLinks a:hover {
     color: $black;
-}
-
-.headerHr {
-    margin-top: 0;
 }
