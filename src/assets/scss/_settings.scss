@@ -37,6 +37,7 @@
 //  32. Thumbnail
 //  33. Tooltip
 //  34. Top Bar
+//  Title Bar Icon
 
 @import 'util/util';
 
@@ -523,7 +524,12 @@ $tooltip-radius: $global-radius;
 // 34. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: #eee;
-$topbar-link-color: #fff;
+$topbar-padding: 0.3rem;
+$topbar-background: $light-gray;
+$topbar-link-color: #5F5F5F;
 $topbar-input-width: 200px;
+
+// Title Bar Icon (For Small Screens)
+// Added here so it gets placed in final css correctly.
+$titlebar-icon-color: $medium-gray;
+$titlebar-icon-color-hover: $dark-gray;

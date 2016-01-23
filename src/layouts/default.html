@@ -1,57 +1,74 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{page-name}} - Joe Paolicelli</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300|Oxygen:400,300,700" rel="stylesheet" type="text/css">
-        <link href="{{root}}assets/fonts/glacialindifference/stylesheet.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{{root}}assets/css/app.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page-name}} - Joe Paolicelli</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300|Oxygen:400,300,700" rel="stylesheet" type="text/css">
+    <link href="{{root}}assets/fonts/glacialindifference/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  </head>
+  <body>
 
-        <!-- Navigation for medium and larger screens. -->
-        <div class="my-header row show-for-medium">
+    <div id="wrapper">
+      <!-- Navigation for medium and larger screens. -->
+      <header class="my-header row show-for-medium">
 
-            <div class="site-title medium-6 large-4 columns">
-                <h1>Joe Paolicelli</h1>
-            </div>
+        <div class="site-title medium-6 large-5 columns">
+          <h1>Joe Paolicelli</h1>
+        </div>
 
-            <div class="headerLinks medium-6 large-8 columns text-right">
+        <nav class="header-links medium-6 large-7 columns text-right">
 
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
 
-            </div>
+        </nav>
+
+      </header>
+
+      {{!-- Top nav bar for small screens only. --}}
+      {{!-- How this works:
+      http://foundation.zurb.com/sites/docs/responsive-navigation.html --}}
+      <div class="show-for-small-only  small-12 columns">
+
+        <div class="title-bar" data-responsive-toggle="small-screen-menu">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Joe Paolicelli</div>
+        </div>
+
+        <div class="top-bar" id="small-screen-menu">
+
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ui>
 
         </div>
 
-        {{!-- Top nav bar for small screens only. --}}
-        {{!-- How this works:
-        http://foundation.zurb.com/sites/docs/responsive-navigation.html --}}
-        <div class="show-for-small-only  small-12 columns">
+      </div>
 
-            <div class="title-bar" data-responsive-toggle="small-screen-menu">
-                <button class="menu-icon" type="button" data-toggle></button>
-                <div class="title-bar-title">Joe Paolicelli</div>
-            </div>
-
-            <div class="top-bar" id="small-screen-menu">
-
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ui>
-
-            </div>
-
-        </div>
-
-
+      <div id="pageContent">
         {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
         {{> body}}
+      </div>
 
-        <script src="{{root}}assets/js/app.js"></script>
-    </body>
+      <div id="push"><!--Needed for sticky footer.--></div>
+
+    </div><!--End of wrapper.-->
+
+    <footer id="footer">
+      <div class="row column">
+        Joe Paolicelli<br>
+        joe@jo<span style="display:none">preventScraping</span>epaolicelli.com
+        <br>
+      </div>
+    </footer>
+
+
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
 </html>
