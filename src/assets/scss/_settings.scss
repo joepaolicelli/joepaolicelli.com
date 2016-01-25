@@ -94,7 +94,7 @@ $grid-column-gutter: 30px;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: "Glacial Indifference Bold", sans-serif;
+$header-font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 $header-font-weight: normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
@@ -116,7 +116,7 @@ $header-sizes: (
     'h6': 16,
   ),
 );
-$header-color: $medium-gray;
+$header-color: $black;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;

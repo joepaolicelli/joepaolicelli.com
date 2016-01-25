@@ -17,14 +17,14 @@ if(Foundation.MediaQuery.atLeast('medium')) {
 }
 
 /* Sticky Footer */
-/* http://codepen.io/imohkay/pen/htpzf */
+/* Original at http://codepen.io/imohkay/pen/htpzf */
 $(document).ready(function(){
-  $(window).resize(function(){
-      var footerHeight = $('#footer').outerHeight();
-      var stickFooterPush = $('#push').height(footerHeight);
+    $(window).resize(function(){
+        var footerHeight = $('#footer').outerHeight();
+        var stickFooterPush = $('#push').height(footerHeight);
 
-      $('#wrapper').css({'marginBottom':'-' + footerHeight + 'px'});
+        $('#wrapper').css({'marginBottom':'-' + footerHeight + 'px'});
+      });
+
+      $(window).resize();
     });
-
-    $(window).resize();
-  });

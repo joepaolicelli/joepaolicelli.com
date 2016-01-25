@@ -72,6 +72,7 @@ header {
 
 .site-title h1 {
   color: #005FD2;
+  font-family: "Glacial Indifference Bold", sans-serif;
 
   margin-bottom: 0;
   line-height: 1.3;
@@ -87,7 +88,7 @@ header {
   }
 
   @include breakpoint(large) {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -122,6 +123,8 @@ header {
 .title-bar {
   background: $white;
   border-bottom: 3px #DDD solid;
+
+  margin-bottom: 0.6rem;
 }
 
 /* Title bar icon styles at end of _settings.scss. They don't work if here. */
