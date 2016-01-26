@@ -88,7 +88,7 @@ header {
 }
 
 .site-title h1 {
-  color: #005FD2;
+
   font-family: "Glacial Indifference Bold", sans-serif;
 
   margin-bottom: 0;
@@ -107,6 +107,10 @@ header {
   @include breakpoint(large) {
     font-size: 3.5rem;
   }
+}
+
+.site-title h1 a {
+  color: #005FD2;
 }
 
 .header-links {
