@@ -48,10 +48,27 @@
   font-size: 1.4rem;
   text-align: center;
   line-height: 2.5rem;
-  color: #666666;
+  color: #555555;
 }
 
-/* Wrapper (Needed for sticky footer.) See app.js for sticky footer info.*/
+.prominantNote {
+  text-align: center;
+  color: #666666;
+
+  margin-left: 10%;
+  margin-right: 10%;
+
+  padding-right: 10%;
+
+  @include breakpoint(large) {
+    padding-right: 5%;
+
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+
+/* Wrapper (Needed for sticky footer.) See app.js for sticky footer info. */
 #wrapper {
   min-height: 100%;
   height: auto !important;
@@ -184,4 +201,26 @@ footer {
   @include breakpoint(800px) {
     margin-top: 7rem;
   }
+}
+/* Portfolio */
+#projectList li:first-child {
+  font-weight: bold;
+  padding-right: 1.5rem;
+}
+
+#projectSummaries {
+  font-size: 1.2rem;
+  color: $black;
+
+  margin-top: 1rem;
+}
+
+#projectSummaries h2 {
+  @include breakpoint(small only) {
+    font-size: 1.6rem;
+  }
+}
+
+.projectMainPicture {
+  width: 100%;
 }

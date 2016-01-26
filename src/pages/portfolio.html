@@ -1,0 +1,245 @@
+---
+page-name: Portfolio
+---
+
+<div class="row column">
+
+  <h1>Portfolio</h1>
+
+  <div class="prominantNote callout" data-closable>
+    <button class="close-button" data-close>&times;</button>
+    This portfolio features some of the projects I've worked on in the past few
+    years. These projects do not completely reflect all of the languages,
+    frameworks, and tools I've worked with. For a complete list of those, please
+    visit <a href="{{root}}about.html">my about page</a>.
+    <br>
+  </div>
+
+  <ul id="projectList" class="menu vertical large-horizontal">
+    <li>Projects</li>
+    <li><a href="#wrgw">WRGW News</a></li>
+    <li><a href="#dms">Mock Dorm Management System</a></li>
+    <li><a href="#stpats">St. Patrick's</a></li>
+    <li><a href="#jp">JoePaolicelli.com</a></li>
+  </ul>
+
+
+  <div id="projectSummaries">
+
+    <a name="wrgw"></a>
+    <h2>WRGW News</h2>
+
+    <div class="project row">
+
+      <div class="small-12 large-7 large-push-5 columns">
+        <a data-open="wrgw1">
+          <img class="projectMainPicture thumbnail"
+            src="{{root}}assets/img/portfolio/wrgw1.png"
+            alt="WRGW News Homepage">
+        </a>
+      </div>
+
+      <div class="small-12 large-5 large-pull-7 columns">
+        <p>For <a href="http://www.wrgwnews.com/" target="_blank">WRGW News</a>,
+        I worked to create a professional and clean news site
+        that kept the content front and center. I designed the site as a
+        custom built WordPress theme, which allowed the newsroom to take
+        advantage of WordPress as a content management system.</p>
+
+        <p><i>WRGW News is the news department of the student radio station
+        at the George Washington University. Design work on the website
+        is not currently active.</i></p>
+
+        <div class-"row">
+          <div class="small-12 medium-6 column">
+            <a data-open="wrgw2">
+              <img class="thumbnail"
+                src="{{root}}assets/img/portfolio/wrgw2.png"
+                alt="WRGW News Example Article">
+            </a>
+          </div>
+          <div class="small-12 medium-6 column">
+            <a data-open="wrgw3">
+              <img class="thumbnail"
+                src="{{root}}assets/img/portfolio/wrgw3.png"
+                alt="WRGW News Category Listing">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <a name="dms"></a>
+    <h2>Mock Dorm Management System</h2>
+
+    <div class="project row">
+
+      <div class="small-12 large-9 columns">
+
+        <p>For a semester-long class project, I worked with a small group to
+        create a mock dorm management system. Build for a standard LAMP stack
+        (Linux, Apache, MySQL, and PHP), our system allowed users to search
+        for buildings, rooms, and facilities issues based on various
+        criteria. Users could also submit applications for housing, and view
+        their current housing assignment. Administrators could view residents
+        and their housing assignments, and edit buildings, rooms, residents,
+        and other elements of the system.</p>
+
+        <p>I lead the design of the database schema (diagram on the right),
+        ensuring the schema was properly designed to reflect the data being
+        stored and that the schema was extensible and easy to make queries
+        from. I also ensured the system was secure - I implemented the login
+        system, ensured proper access control, hashed and salted the
+        passwords before storing them, and protected all input fields against
+        SQL injection. In addition, I wrote a substantial amount of the SQL
+        statements executed by the system, and contributed to other parts of
+        the project.</p>
+
+      </div>
+
+      <div class="small-12 large-3 columns">
+
+        <a data-open="dms1">
+          <img class="thumbnail"
+            src="{{root}}assets/img/portfolio/dms1.png"
+            alt="Database schema for the mock dorm management system.">
+        </a>
+
+        <p><a target="_blank"
+          href="https://gist.github.com/joepaolicelli/dfb4c9d58f3d25e023e5">
+          Code Sample: Credential Checking</a></p>
+
+        <p><a target="_blank"
+          href="https://gist.github.com/joepaolicelli/41fdba8f498b36b1324c">
+          Code Sample: Search Results</a></p>
+
+      </div>
+
+    </div>
+
+    <a name="stpats"></a>
+    <h2>St. Patrick's</h2>
+
+    <div class="project row">
+
+      <div class="small-12 large-7 large-push-5 columns">
+        <a data-open="stpats1">
+          <img class="projectMainPicture thumbnail"
+            src="{{root}}assets/img/portfolio/stpats1.png"
+            alt="St. Patrick's Parish Homepage">
+        </a>
+      </div>
+
+      <div class="small-12 large-5 large-pull-7 columns">
+        <p>I built a simple website for St. Patrick's, my home parish. The
+        site was originally built using only HTML and CSS, and I later
+        adapted it to work with WordPress.</p>
+
+        <p><i>This website is no longer online, as St. Patrick's recently
+        switched to a new custom system built for churches.</i></p>
+
+        <div class-"row">
+          <div class="small-12 medium-6 column">
+            <a data-open="stpats2">
+              <img class="thumbnail"
+                src="{{root}}assets/img/portfolio/stpats2.png"
+                alt="St. Patrick's Parish Website">
+            </a>
+          </div>
+          <div class="small-12 medium-6 column">
+            <a data-open="stpats3">
+              <img class="thumbnail"
+                src="{{root}}assets/img/portfolio/stpats3.png"
+                alt="St. Patrick's Parish Website">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <a name="jp"></a>
+    <h2>JoePaolicelli.com</h2>
+
+    <div class="project row column">
+
+      <p>I designed this website to have a clean, minimalist, and modern feel.
+      Built on
+      <a href="http://foundation.zurb.com/" target="_blank">Foundation 6</a>,
+      this site is fully responsive. You can view the code for this site
+      <a href="#" target="_blank">on Github</a>.</p>
+
+    </div>
+
+  </div>
+
+  <!-- Large image reveals. -->
+  <div id="wrgw1" class="large reveal" data-reveal>
+    <img src="{{root}}assets/img/portfolio/wrgw1.png">
+
+    <button class="close-button" data-close aria-label="Close picture"
+      type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div id="wrgw2" class="large reveal" data-reveal>
+    <img src="{{root}}assets/img/portfolio/wrgw2.png">
+
+    <button class="close-button" data-close aria-label="Close picture"
+      type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div id="wrgw3" class="large reveal" data-reveal>
+    <img src="{{root}}assets/img/portfolio/wrgw3.png">
+
+    <button class="close-button" data-close aria-label="Close picture"
+      type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div id="dms1" class="large reveal" data-reveal>
+    <img src="{{root}}assets/img/portfolio/dms1.png">
+
+    <button class="close-button" data-close aria-label="Close picture"
+      type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div id="stpats1" class="large reveal" data-reveal>
+    <img src="{{root}}assets/img/portfolio/stpats1.png">
+
+    <button class="close-button" data-close aria-label="Close picture"
+      type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div id="stpats2" class="large reveal" data-reveal>
+    <img src="{{root}}assets/img/portfolio/stpats2.png">
+
+    <button class="close-button" data-close aria-label="Close picture"
+      type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div id="stpats3" class="large reveal" data-reveal>
+    <img src="{{root}}assets/img/portfolio/stpats3.png">
+
+    <button class="close-button" data-close aria-label="Close picture"
+      type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <!-- End of image reveals. -->
+
+</div>
