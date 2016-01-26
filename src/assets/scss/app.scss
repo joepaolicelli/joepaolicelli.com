@@ -206,6 +206,27 @@ footer {
     margin-top: 7rem;
   }
 }
+
+/* About */
+
+#aboutPageContent {
+  font-size: 1rem;
+  color: #555555;
+
+  @include breakpoint(medium) {
+    font-size: 1.2rem;
+  }
+
+  @include breakpoint(large) {
+    font-size: 1.6rem;
+  }
+}
+
+#aboutPageContent #blurb {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 /* Portfolio */
 #projectList li:first-child {
   font-weight: bold;
