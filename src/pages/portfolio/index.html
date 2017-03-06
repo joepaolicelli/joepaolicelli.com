@@ -6,25 +6,57 @@ page-name: Portfolio
 
   <h1>Portfolio</h1>
 
-  <div class="prominantNote callout" data-closable>
-    <button class="close-button" data-close>&times;</button>
-    This portfolio features some of the projects I've worked on in the past few
-    years. These projects do not completely reflect all of the languages,
-    frameworks, and tools I've worked with. For a complete list of those, please
-    visit <a href="{{root}}about">my about page</a>.
-    <br>
-  </div>
-
   <ul id="projectList" class="menu vertical large-horizontal">
     <li>Projects</li>
+    <li><a href="#cabi">Bikeshare Prediction API</a></li>
+    <li><a href="#comic">Comic Book Alexa App</a></li>
     <li><a href="#wrgw">WRGW News</a></li>
-    <li><a href="#dms">Mock Dorm Management System</a></li>
+    <li><a href="#dms">Dorm Management System</a></li>
     <li><a href="#stpats">St. Patrick's</a></li>
     <li><a href="#jp">JoePaolicelli.com</a></li>
   </ul>
 
-
   <div id="projectSummaries">
+
+    <a name="cabi"></a>
+    <h2>Capital Bikeshare Availability Prediction API</h2>
+
+    <div class="project row column">
+      <p>I built a system to predict bike availability in <a
+      href="https://www.capitalbikeshare.com/" target="_blank">Washington D.C.'s
+      Capital Bikeshare system</a> as an intern at <a
+      href="https://www.missiondata.com/" target="_blank">Mission Data</a>. The
+      system applies machine learning techniques to past Capital Bikeshare data and
+      weather data to predict the chances a bikeshare station will have bikes or
+      empty docks available at a given point in the future. Written in Python 3, data
+      analysis and machine learning are done using <a
+      href="http://pandas.pydata.org/" target="_blank">Pandas</a> and <a
+      href="http://scikit-learn.org/stable/" target="_blank">scikit-learn</a>, and
+      the JSON API is built using <a href="https://falconframework.org/"
+      target="_blank">Falcon</a>. I also wrote a web interface in <a
+      href="https://angular.io/" target="_blank">Angular 2</a> with TypeScript.</p>
+
+      <p><i>Additional details and source code <a
+      href="https://github.com/joepaolicelli/cabi-prediction-api"
+      target="_blank">are available on GitHub</a>. You can also <a
+      href="{{root}}files/cabi_presentation.pdf" target="_blank">download my
+      slides</a> from when I presented this project at a Capital Bikeshare Hack
+      Night in November 2016.</i></p>
+    </div>
+
+    <a name="comic"></a>
+    <h2>Comic Book Guide Amazon Alexa App</h2>
+
+    <div class="project row column">
+      <p>While at <a href="https://www.missiondata.com/" target="_blank">Mission Data</a>, I built
+      a custom voice application for <a href="https://developer.amazon.com/alexa" target="_blank">Amazon Alexa</a>
+      speakers and devices that answers questions in a conversational format about
+      characters, teams, items, and more from comic books. The application is built
+      in Ruby using the <a href="http://www.sinatrarb.com/" target="_blank">Sinatra</a> web framework. If you have an Alexa device, you can
+      use Comic Book Guide by saying "Alexa, enable Comic Book Guide".</p>
+
+      <p><i>Source code is <a href="https://github.com/ornlabs/AlexaComicSkill" target="_blank">available on GitHub</a>.</i></p>
+    </div>
 
     <a name="wrgw"></a>
     <h2>WRGW News</h2>
@@ -40,7 +72,7 @@ page-name: Portfolio
       </div>
 
       <div class="small-12 large-5 large-pull-7 columns">
-        <p>For <a href="http://www.wrgwnews.com/" target="_blank">WRGW News</a>,
+        <p>For <a href="http://news.gwradio.com/" target="_blank">WRGW News</a>,
         I worked to create a professional and clean news site
         that kept the content front and center. I designed the site as a
         custom built WordPress theme, which allowed the newsroom to take
@@ -106,14 +138,6 @@ page-name: Portfolio
             src="{{root}}assets/img/portfolio/dms1.png"
             alt="Database schema for the mock dorm management system.">
         </a>
-
-        <p><a target="_blank"
-          href="https://gist.github.com/joepaolicelli/dfb4c9d58f3d25e023e5">
-          Code Sample: Credential Checking</a></p>
-
-        <p><a target="_blank"
-          href="https://gist.github.com/joepaolicelli/41fdba8f498b36b1324c">
-          Code Sample: Search Results</a></p>
 
       </div>
 
