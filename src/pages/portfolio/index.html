@@ -4,17 +4,27 @@ page-name: Portfolio
 
 <div class="row column">
 
-  <h1>Portfolio</h1>
-
-  <ul id="projectList" class="menu vertical large-horizontal">
-    <li>Projects</li>
-    <li><a href="#cabi">Bikeshare Prediction API</a></li>
-    <li><a href="#comic">Comic Book Alexa App</a></li>
-    <li><a href="#wrgw">WRGW News</a></li>
-    <li><a href="#dms">Dorm Management System</a></li>
-    <li><a href="#stpats">St. Patrick's</a></li>
-    <li><a href="#jp">JoePaolicelli.com</a></li>
-  </ul>
+  <div class="row">
+    <div class="small-12 large-9 columns">
+      <h1>Portfolio</h1>
+    </div>
+    <div class="small-12 large-3 columns">
+      <ul id="projectList" class="menu dropdown float-right" data-dropdown-menu>
+        <li>
+          <a>Projects</a>
+          <ul class="menu">
+            <li><a href="#cabi">Bikeshare Prediction API</a></li>
+            <li><a href="#comic">Comic Book Alexa App</a></li>
+            <li><a href="#biblocomplete">Biblocomplete</a></li>
+            <li><a href="#wrgw">WRGW News</a></li>
+            <li><a href="#dms">Dorm Management System</a></li>
+            <li><a href="#stpats">St. Patrick's</a></li>
+            <li><a href="#jp">JoePaolicelli.com</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <div id="projectSummaries">
 
@@ -28,17 +38,43 @@ page-name: Portfolio
       href="https://www.missiondata.com/" target="_blank">Mission Data</a>. The
       system applies machine learning techniques to past Capital Bikeshare data and
       weather data to predict the chances a bikeshare station will have bikes or
-      empty docks available at a given point in the future. Written in Python 3, data
-      analysis and machine learning are done using <a
-      href="http://pandas.pydata.org/" target="_blank">Pandas</a> and <a
-      href="http://scikit-learn.org/stable/" target="_blank">scikit-learn</a>, and
-      the JSON API is built using <a href="https://falconframework.org/"
-      target="_blank">Falcon</a>. I also wrote a web interface in <a
-      href="https://angular.io/" target="_blank">Angular 2</a> with TypeScript.</p>
+      empty docks available at a given point in the future.
+
+      <div class="row projectTools">
+        <div class="small-12 large-6 columns">
+          <p>Written in <b>Python 3</b></p>
+          <p>Data analysis with
+            <b><a href="http://pandas.pydata.org/" target="_blank">Pandas</a></b>
+          </p>
+          <p>Machine Learning with
+            <b><a href="http://scikit-learn.org/stable/" target="_blank">scikit-learn</a></b>
+          </p>
+          <p>JSON API using
+            <b><a href="https://falconframework.org/" target="_blank">Falcon</a></b>
+          </p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <p>Web interface in
+            <b><a href="https://angular.io/" target="_blank">Angular 2</a></b>
+            with <b>TypeScript</b>
+          </p>
+          <p>
+            <b><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></b>
+            and
+            <b><a href="https://www.sqlalchemy.org/" target="_blank">SQLAlchemy</a></b>
+          </p>
+          <p>
+            <b><a href="https://developers.google.com/maps/web-services/overview" target="_blank">Google Maps API</a></b>
+          </p>
+          <p>
+            <b><a href="https://www.wunderground.com/weather/api/d/docs?d=index" target="_blank">Weather Underground API</a></b>
+          </p>
+        </div>
+      </div>
 
       <p><i>Additional details and source code <a
       href="https://github.com/joepaolicelli/cabi-prediction-api"
-      target="_blank">are available on GitHub</a>. You can also <a
+      target="_blank">are available on <b>GitHub</b></a>. You can also <a
       href="{{root}}files/cabi_presentation.pdf" target="_blank">download my
       slides</a> from when I presented this project at a Capital Bikeshare Hack
       Night in November 2016.</i></p>
@@ -51,18 +87,71 @@ page-name: Portfolio
       <p>While at <a href="https://www.missiondata.com/" target="_blank">Mission Data</a>, I built
       a custom voice application for <a href="https://developer.amazon.com/alexa" target="_blank">Amazon Alexa</a>
       speakers and devices that answers questions in a conversational format about
-      characters, teams, items, and more from comic books. The application is built
-      in Ruby using the <a href="http://www.sinatrarb.com/" target="_blank">Sinatra</a> web framework. If you have an Alexa device, you can
+      characters, teams, items, and more from comic books. If you have an Alexa device, you can
       use Comic Book Guide by saying "Alexa, enable Comic Book Guide".</p>
 
-      <p><i>Source code is <a href="https://github.com/ornlabs/AlexaComicSkill" target="_blank">available on GitHub</a>.</i></p>
+      <div class="row projectTools">
+        <div class="small-12 large-6 columns">
+          <p>Written in <b>Ruby</b></p>
+          <p>
+            <b><a href="http://www.sinatrarb.com/" target="_blank">Sinatra</a></b>
+            web framework
+          </p>
+          <p>
+            <b><a href="https://developer.amazon.com/alexa" target="_blank">Alexa Skills Kit (SDK)</a></b>
+          </p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <p>
+            <b><a href="http://developer.marvel.com/" target="_blank">Marvel API</a></b>
+          </p>
+          <p>
+            <b><a href="http://comicvine.gamespot.com/api/" target="_blank">Comic Vine API</a></b>
+          </p>
+        </div>
+      </div>
+
+      <p><i>Source code is <a href="https://github.com/ornlabs/AlexaComicSkill" target="_blank">available on <b>GitHub</b></a>.</i></p>
+    </div>
+
+    <a name="biblocomplete"></a>
+    <h2>Biblocomplete Senior Design Project (In Progress)</h2>
+
+    <div class="project row column">
+      <p>For my senior design project, I am working with a partner to create an autocomplete
+        system that uses natural language processing techniques to provide enhanced results.
+        The project involves processing terabytes of data from the
+        <b><a href="http://storage.googleapis.com/books/ngrams/books/datasetsv2.html" target="_blank">
+          Google Books Ngram Corpus</a></b>,
+        storing it compactly, and accessing it efficently. Completions are made
+        available via a JSON API, and we have two interfaces to demonstrate autocompletion -
+        a web application and an Amazon Alexa voice interface.
+      </p>
+
+      <div class="row projectTools">
+        <div class="small-12 large-6 columns">
+          <p>Data processing using <b>Python 3</b></p>
+          <p>API endpoint and database access using <b>Java</b></p>
+          <p>Data storage and indexing with
+            <b><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></b>
+          </p>
+        </div>
+        <div class="small-12 large-6 columns">
+          <p>Web interface using <b>JavaScript</b> and
+            <b><a href="https://jquery.com/" target="_blank">jQuery</a></b>
+          </p>
+          <p>
+            Voice interface using <b>JavaScript</b> and
+            <b><a href="https://developer.amazon.com/alexa" target="_blank">Alexa Skills Kit</a></b>
+          </p>
+        </div>
+      </div>
     </div>
 
     <a name="wrgw"></a>
     <h2>WRGW News</h2>
 
     <div class="project row">
-
       <div class="small-12 large-7 large-push-5 columns">
         <a data-open="wrgw1">
           <img class="projectMainPicture thumbnail"
@@ -75,11 +164,12 @@ page-name: Portfolio
         <p>For <a href="http://news.gwradio.com/" target="_blank">WRGW News</a>,
         I worked to create a professional and clean news site
         that kept the content front and center. I designed the site as a
-        custom built WordPress theme, which allowed the newsroom to take
+        custom built WordPress theme (using <b>PHP</b>, <b>HTML</b>, and <b>CSS</b>),
+        which allowed the newsroom to take
         advantage of WordPress as a content management system.</p>
 
         <p><i>WRGW News is the news department of the student radio station
-        at the George Washington University. Design work on the website
+        at the George Washington University. Development on the website
         is not currently active.</i></p>
 
         <div class-"row">
@@ -112,7 +202,7 @@ page-name: Portfolio
 
         <p>For a semester-long class project, I worked with a small group to
         create a mock dorm management system. Build for a standard LAMP stack
-        (Linux, Apache, MySQL, and PHP), our system allowed users to search
+        (<b>Linux</b>, <b>Apache</b>, <b>MySQL</b>, and <b>PHP</b>), our system allowed users to search
         for buildings, rooms, and facilities issues based on various
         criteria. Users could also submit applications for housing, and view
         their current housing assignment. Administrators could view residents
@@ -158,7 +248,7 @@ page-name: Portfolio
 
       <div class="small-12 large-5 large-pull-7 columns">
         <p>I built a simple website for St. Patrick's, my home parish. The
-        site was originally built using only HTML and CSS, and I later
+        site was originally built using only <b>HTML</b> and <b>CSS</b>, and I later
         adapted it to work with WordPress.</p>
 
         <p><i>This website is no longer online, as St. Patrick's recently
@@ -190,12 +280,16 @@ page-name: Portfolio
 
     <div class="project row column">
 
-      <p>I designed this website to have a clean, minimalist, and modern feel.
-      Built on
-      <a href="http://foundation.zurb.com/" target="_blank">Foundation 6</a>,
-      this site is fully responsive. You can view the code for this site
+      <p>This website is built with
+      <b><a href="http://foundation.zurb.com/" target="_blank">Foundation 6</a></b>,
+      using <b>HTML</b>,
+      <b><a href="http://sass-lang.com/" target="_blank">SCSS/Sass</a></b>,
+      <b>JavaScript</b>,
+      <b><a href="http://gulpjs.com/" target="_blank">Gulp</a></b>, and
+      <b><a href="https://bower.io/" target="_blank">Bower</a></b>.
+      The site is fully responsive. You can view the code for this site
       <a href="https://github.com/joepaolicelli/joepaolicelli.com" target="_blank">
-        on Github</a>.
+        on <b>Github</b></a>.
       </p>
 
     </div>
